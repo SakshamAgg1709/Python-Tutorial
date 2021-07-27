@@ -47,3 +47,36 @@ for i in inp :
 
 print(inp)
 
+high = 0
+
+while(True):
+    inp = int(input("enter the number"))
+    li = []
+    li.append(inp)
+    if inp == 0:
+        break
+        li2 = li.sort()
+        li3 = li2.reverse()
+        high = li3[0]
+    else:
+        continue
+
+
+""""Or we can use the below code"""
+# num = -1
+# h = 0
+# while(num!=0):
+#     num = int(input("Enter the number"))
+#     if h<= num:
+#         h = num
+#
+print(f"The highest number entered by you is {high}")
+
+
+
+
+
+str = input("Enter any positive number")
+dig = [int(x) for x in str(str)]
+sum = sum(dig)
+print(sum)
