@@ -28,3 +28,46 @@ else:
 
 a = print([f"{i+1}" for i in range(int(input("Enter the number")))])
 
+
+"""
+m = int(input("Enter the value of m"))
+n = int(input("Enter the value of n"))
+
+for i in  range(m, n+1):
+    if i%m == 0:
+        print(i)
+    else:
+        print("THer is no number divisible by 5 in this range")
+
+if m>n:
+    print("Enter value of n greater than m")
+"""
+
+# Python program to check if the number is an Armstrong number or not
+
+# take input from the user
+num = int(input("Enter a number: "))
+
+# initialize sum
+sum = 0
+
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10 
+   sum += digit ** 3
+   temp //= 10
+
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+
+
+
+
+
+
+
+
