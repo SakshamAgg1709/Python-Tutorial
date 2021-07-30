@@ -1,7 +1,5 @@
 # Static Methods in Python
 
-# Class Methods As Alternative Constructors
-
 class Employee:
     no_of_leaves  = 8
     def __init__(self , aname ,asalary , arole):
