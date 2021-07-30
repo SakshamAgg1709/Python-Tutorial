@@ -32,3 +32,8 @@ print(d2)
 
 print(d2.keys())#To print keys
 print(d2.items())#to print items
+
+
+d3 = {"Harry" : "Coder"}
+print(d3.get('Harry'))# We use get when Harry is not present in dict - it returns none if we write - .get("Harrry4")
+print(d3['Harry'])# It gives same result but we use it only if the key is present in the dict otherwise it willl return error - if we write - ["Haarry3]
