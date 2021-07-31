@@ -1,5 +1,7 @@
 """Problems Of ages"""
+import time
 
+instant = time.time()
 age_year = input("Enter you age and the year of birth: Separating \"-\" ; Like-> 21-2000\n")
 age = int(age_year.split("-")[0])
 year = int(age_year.split("-")[1])
@@ -29,20 +31,43 @@ def your_age(y):
     else:
         return f"In {y} , Your age will be {y2}"
 
-print("Wanna play another trivia : Type Y for Yes or N for No\n")
-y_n = input()
-y_n2 = y_n.capitalize()
+
+year2 = int(input("Enter the year for which you want to know your age\n"))
+print(your_age(year2))
 
 
-if y_n2 == "Y" :
-        year2 = int(input("Enter the year for which you want to know your age\n"))
-        print(your_age(year2))
+instant2 = time.time()
+print(instant2-instant)
 
-elif y_n2 == "N":
-        print("Thanks for cooperation")
+
+
+"""Harry Bhai's Solution"""
+
+yearAge = int(input("What is your Age/Year of birth\n"))
+isAge = False
+isYear = False
+
+if len(str(yearAge)) == 4:
+    isYear = True
 
 else:
-    print("Enter correct answer: Y for Yes or N for No ")
+    isAge = True
 
+if(yearAge<1900 and isYear):
+    print("You seem to be the oldest person alive")
+    exit()
+
+if(yearAge>2019):
+    print("You are not yet born")
+    exit()
+
+if isAge:
+    yearAge = 2019 - yearAge
+
+print(f"You will be 100 years old in {yearAge + 100}")
+
+interestedYear = int(input("Enter the year you want to know your age in\n"))
+
+print(f"You will be {interestedYear - yearAge} years old in {interestedYear}")
 
 
