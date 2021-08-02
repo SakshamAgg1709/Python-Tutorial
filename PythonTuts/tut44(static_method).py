@@ -28,7 +28,7 @@ class Employee:
     def printgood(string):#It can be run only in this class object
 
         print("This is good" + string)#It doesn't take self or cls as an argument
-        # It can be used by class as well as any instance
+        # It can be used by class as well as any instance - Ye koi argument nhi leta - It is just a common function used to rpint a string but it is written in this class so that only the objects of this class only
 
 
 
