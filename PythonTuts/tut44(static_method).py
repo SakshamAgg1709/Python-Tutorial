@@ -26,6 +26,7 @@ class Employee:
 
     @staticmethod
     def printgood(string):#It can be run only in this class object
+
         print("This is good" + string)#It doesn't take self or cls as an argument
         # It can be used by class as well as any instance
 
@@ -33,8 +34,11 @@ class Employee:
 
 
 karan = Employee.from_str("Karan-30000-Student")
+saksham = Employee.from_str("Saksham-300000-student")
 print(karan.salary)
 print(karan.name)
 print(karan.role)
 
 karan.printgood(" Saksham")
+Employee.printgood("work")
+saksham.printgood("work")

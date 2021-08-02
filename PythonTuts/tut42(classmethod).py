@@ -38,3 +38,6 @@ print(Employee.no_of_leaves)
 print(saksham.no_of_leaves)
 print(harry.no_of_leaves)
 
+saksham.change_leaves(3)# Isse Emplyee ki no_of_leaves bhi change ho gayi
+print(Employee.no_of_leaves)
+print(saksham.no_of_leaves)
