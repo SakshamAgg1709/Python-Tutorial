@@ -54,7 +54,7 @@ sum = 0
 # find the sum of the cube of each digit
 temp = num
 while temp > 0:
-   digit = temp % 10 
+   digit = temp % 10
    sum += digit ** 3
    temp //= 10
 
@@ -63,10 +63,23 @@ if num == sum:
    print(num,"is an Armstrong number")
 else:
    print(num,"is not an Armstrong number")
+#
+# """Tell howwmany rpime numbers are therre in na reange"""
+min = int(input("Enter the minimm value"))
+max = int(input("Enter the maximum value"))
 
+c = 0
 
+for i in range(min, max+1):
+    if i > 1:
+        for i in range(2 ,i):
+            if i % i ==0:
+                break
+        else:
+            print(i)
+            c+=1
 
-
+print(f"There are {c} prime numbers in this branch")
 
 
 
