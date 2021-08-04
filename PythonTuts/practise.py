@@ -81,22 +81,28 @@
 #
 # print(f"There are {c} prime numbers in this branch")
 
-a = float(input("Enter the length of First dide of triangle"))
-b = float(input("Enter the length of Second dide of triangle"))
-c = float(input("Enter the length of Third dide of triangle"))
+# a = float(input("Enter the length of First dide of triangle"))
+# b = float(input("Enter the length of Second dide of triangle"))
+# c = float(input("Enter the length of Third dide of triangle"))
+#
+#
+# if (a+b)<=c or (b+c)<=a or (a+c)<=b:
+#     print("The triangle is not possible")
+# else:
+#     if a == b == c:
+#         print("It is a Equilateral Triangle")
+#     elif a == b or b==c or a==c:
+#         print("It is a isoceles triangle")
+#
+#     elif a!=b!=c:
+#         print("it is a scalene")
 
 
-if (a+b)<=c or (b+c)<=a or (a+c)<=b:
-    print("The triangle is not possible")
-else:
-    if a == b == c:
-        print("It is a Equilateral Triangle")
-    elif a == b or b==c or a==c:
-        print("It is a isoceles triangle")
+"""Program to convert entered number into words"""
 
-    elif a!=b!=c:
-        print("it is a scalene")
+import num2words
 
-
-
+num0 = int(input("Enter any number:\n"))
+num01 = num2words.num2words(num0 )
+print(str(num01).capitalize())
 
