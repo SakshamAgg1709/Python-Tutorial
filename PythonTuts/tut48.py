@@ -1,4 +1,7 @@
+#Multilevel Inheritance
+
 class Dad:
+    dance = 3
     basketball = 1
     pass
 
@@ -10,6 +13,7 @@ class Son(Dad):
 
 class Grandson(Son):
     dance = 6
+    # basketball = 4
     def isdance(self):
         return f"Jackson yeah!"\
             f"Yes I dance very awesomely  in {self.dance} no of ways"
@@ -21,7 +25,7 @@ larry = Son()
 harry = Grandson()
 
 print(harry.isdance())#Grandson wala method work karega because usne Son ko inherit kiya h aur isdance method ko overwrite kiya h
-
+print(harry.dance)
 """Quiz"""
 
 print(harry.basketball)# Grandson Son ko inherit kar rha h aur Son Dad ko inherit kar rha h
@@ -49,4 +53,4 @@ iPhone = Mobile()
 
 print(iPhone.computer)
 print(iMac.Printer)
-#print(calc.mobile)# = > I will give an error because neither Pocketgadegt nor ElectronicGadget do not have mobile attribute"""
+print(calc.mobile)# = > I will give an error because neither Pocketgadegt nor ElectronicGadget do not have mobile attribute"""
