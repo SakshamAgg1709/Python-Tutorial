@@ -12,8 +12,8 @@ numbers = [2,10,3,56,7]
 # # print(numbers[2])
 # # numbers.sort() #It will arrange the list in asending order
 # #
-# # numbers.reverse()
-# # print(numbers)
+numbers.reverse()
+print(numbers)
 #
 """
 They will print all numbers
