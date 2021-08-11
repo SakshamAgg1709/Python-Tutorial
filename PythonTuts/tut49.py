@@ -35,7 +35,7 @@ class Employee:
         print("This is good" + string)
 
 
-emp = Employee("Saksham" ,10000000, "Programmer")
+emp = Employee.from_str( "Saksham-10000000-Programmer")
 print(emp._protect)
 #print(emp.__private)#It will through an error due to name angling in Python
 print(emp._Employee__private) # By this we can use a private variable
@@ -45,4 +45,5 @@ class Protected(Employee):
 
 emp2 = Protected("Rohan" ,440  ,"Student")
 
-print(emp2._protect)# Here we can use a protcted variable
+print(emp2._protect)# Here we can use a protected variable
+print(emp2._Employee__private)
