@@ -26,7 +26,7 @@ Next palindrome for 2133 is 2222
 
 print("How many test cases you want")
 inp = int(input())
-print(f"Enter any number {inp} times")
+print(f"Enter any numbers {inp} times")
 
 lis = []
 for n in range(inp):
@@ -36,17 +36,19 @@ for n in range(inp):
     except ValueError as e:
         print("Please enter a digit")
 
-for i in lis:
-    while True:
-        str1 = str(i)
-        rev = str1[::-1]
-        if rev == str1:
-            print(f"Next Palindrome after {i} is {str1}")
-            break
-        else:
-            continue
+def next_palindrome(n):
+    n = n+1
+    while not palindrome(n):
+        n+=1
+    return n
 
 
+def palindrome(n):
+    return str(n) == str(n)[::-1]
+
+
+for i in range(inp):
+    print(f"Next palindrome after {lis[i]} is {next_palindrome(lis[i])}")
 print("Thanks for Participating")
 
 """Harry Bhai's Solution"""
