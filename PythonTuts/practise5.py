@@ -76,7 +76,61 @@ print(f"The highest number entered by you is {high}")
 
 
 
-str = input("Enter any positive number")
-dig = [int(x) for x in str(str)]
+str1 = input("Enter any positive number")
+dig = [int(x) for x in str(str1)]
 sum = sum(dig)
 print(sum)
+
+"""Changing String sentence with first letter of each word capital """
+
+str1 = input()
+str2 = ""
+
+l = len(str)
+i = 0
+
+while i<l:
+    if  i==0:
+        str2  = str2  + str1[0].upper()
+        i = i + 1
+    elif str1[i] == '' and str1[i+1] != " ":
+        str2 = str2 + str1[i]
+        str2 = str2 + str1[i + 1].upper()
+        i = i + 2
+    else:
+        str2 = str2 + str1[i]
+        i = i + 1
+
+
+print(str2)
+
+"""Printing Pyramid Pattern"""
+# Function to demonstrate printing pattern triangle
+def triangle(n):
+    # number of spaces
+    k = n - 1
+
+    # outer loop to handle number of rows
+    for i in range(0, n):
+
+        # inner loop to handle number spaces
+        # values changing acc. to requirement
+        for j in range(0, k):
+            print(end=" ")
+
+        # decrementing k after each loop
+        k = k - 1
+
+        # inner loop to handle number of columns
+        # values changing acc. to outer loop
+        for j in range(0, i + 1):
+            # printing stars
+            print("* ", end="")
+
+        # ending line after each row
+        print("\r")
+
+
+# Driver Code
+n = 5
+triangle(n)
