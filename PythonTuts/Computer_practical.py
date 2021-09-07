@@ -21,7 +21,7 @@ print(n, n * 2, n * 3, n * 4, n * 5)
 """
 
 """to reverse the digits of a given three digit number. Eg. Input=345, output must be 543. (without iteration statement)"""
-
+"""
 n=int(input("Enter any 3 digit number \n"))
 r=0
 if n<1000 and n>99:
@@ -34,7 +34,7 @@ if n<1000 and n>99:
 else:
     print("\n!Enter Input Correctly!")
 
-
+"""
 
 """ To convert numbers into words"""
 
@@ -220,7 +220,7 @@ print("The Sum of entered numbers =>", sum )
 
 """Find the highest and the second highest number among four numbers"""
 
-
+"""
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 num3 = int(input("Enter third number: "))
@@ -266,3 +266,151 @@ else:
 
 
 print("The Highest Number is", int(largest), "\n","The Second Highest Number is ", sec_largest)
+
+"""
+"""
+str1=input("Enter any word you want to check \n")
+if str1==str1[::-1]:
+    print("Yes",str1,"is a Palindrome ")
+else:
+    print("No",str1,"is not a Palindrome")
+"""
+"""
+
+# For finding prime numbers in a specified range
+m = int(input("Enter lower range: "))
+n = int(input("Enter upper range: "))
+print("Required prime numbers: ")
+
+for num in range(m, n + 1):
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                break
+        else:
+            print(num)
+"""
+"""
+#FIBONACCI SERIES
+
+nterms = int(input("How many terms? "))
+
+# first two terms
+n1, n2 = 0, 1
+count = 0
+
+if nterms <= 0:
+   print("Please enter a positive integer")
+
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1, end=" ")
+       nth = n1 + n2
+       n1 = n2
+       n2 = nth
+       count += 1
+"""
+"""
+
+# Even or Odd in a range
+n = int(input("Enter last value of range starting from 1 to ->"))
+c = int(input("Enter your the number from 1 to 3 in accordane to your choice:\n1 for Even\n2 for Odd\n3 for Exit the Program:\n"))
+for i in range(1, n + 1):
+    a = i % 2
+    if c == 1:
+        if a == 0:
+            print(i, "is even number")
+
+    elif c == 2:
+        if a != 0:
+            print(i, "is odd number")
+
+    elif c == 3:
+        print("Program Ended")
+        break
+"""
+"""
+#Profit / Loss Decider
+total_cp= 0
+total_sp= 0
+
+
+for i in range(1,11):
+    print("Item",i,"\n")
+    cost_price = float(input("Enter cost price -> "))
+    sell_price = float(input("Enter selling price -> "))
+    total_cp += cost_price
+    total_sp += sell_price
+
+if total_cp > total_sp :
+    print("\nLoss Occurred :(")
+elif total_cp == total_sp :
+    print("\nNo Loss, No Profit :|")
+else :
+    print("\nProfit Occurred :)")
+"""
+
+"""
+
+# Number Palindrome
+num =int(input("Enter number\n"))
+num2 =num
+reverse=0
+while(num>0):
+    dig=num%10
+    reverse=reverse*10+dig
+    num=num//10
+if(num2==reverse):
+    print("The number is a PALINDROME.")
+else:
+    print("The number is NOT a PALINDROME.")
+"""
+
+
+str=input("Enter string \n")
+count_upper = 0
+count_lower = 0
+count_alpha = 0
+count_digit = 0
+
+for i in range(len(str)):
+    if(str[i].isalpha()):
+        count_alpha = count_alpha + 1
+    elif(str[i].isdigit()):
+        count_digit = count_digit + 1
+    else:
+        continue
+
+for n in str:
+    if n.islower():
+        count_lower = count_lower + 1
+    elif n.isupper():
+        count_upper = count_upper + 1
+    else:
+        continue
+
+print("\nTotal Number of Alphabets in this String :  ", count_alpha)
+print("Total Number of Digits in this String : ", count_digit)
+print("Total Number of Lowercase Characters in this String : ",count_lower)
+print("Total Number of Uppercase Characters in this String : ",count_upper)
+
+
+
+str1 =input("Enter any word  \n")
+if str1 == str1[::-1]:
+    print("Yes",str1,"is a Palindrome String")
+else:
+    print("No",str1,"is NOT a Palindrome String")
+
+inp = int(input("Enter any number\n"))
+sum = 0
+while (inp > 0):
+    rem = inp % 10
+    sum = sum + rem
+    inp = inp // 10
+
+print("\nSum of the digits of entered number is ->  ", sum)
