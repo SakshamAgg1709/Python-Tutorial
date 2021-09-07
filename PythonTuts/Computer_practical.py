@@ -22,15 +22,15 @@ print(n, n * 2, n * 3, n * 4, n * 5)
 
 """to reverse the digits of a given three digit number. Eg. Input=345, output must be 543. (without iteration statement)"""
 
-
+"""
 inp1 = input("Enter a three digit number:\n")
 print(inp1[::-1])
-
+"""
 
 
 """ To convert numbers into words"""
 
-
+"""
 
 ones = ('Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine')
 
@@ -106,5 +106,30 @@ def getWords(number):
 number = int(input('Enter any number: '))
 
 print('%d in words is: %s' %(number, getWords(number)))
-
 """
+"""
+Square roots of quadratic equation
+"""
+
+print("Enter the coefficients of quadratic equation:")
+
+a = int(input("Enter the coefficient of x2:\n"))
+b = int(input("Enter the coefficient of x:\n"))
+c = int(input("Enter the constant term:\n"))
+
+d = (b**2)- (4*a*c)
+
+
+if d == 0:
+    r1 = (-b)/2*a
+    r2 = (-b)/2*a
+elif d > 0 :
+    d_sqr = d ** .5
+    r1 = ((-b) + d_sqr)/2*a
+    r2 = ((-b) - d_sqr)/2*a
+elif d <0 :
+    print("There are no real roots")
+
+print("Square roots of the equation are", "\n", r1,"\n", r2)
+
+
