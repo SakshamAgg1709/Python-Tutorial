@@ -369,9 +369,10 @@ if(num2==reverse):
 else:
     print("The number is NOT a PALINDROME.")
 """
-
+""" 
 
 str=input("Enter string \n")
+
 count_upper = 0
 count_lower = 0
 count_alpha = 0
@@ -397,9 +398,9 @@ print("\nTotal Number of Alphabets in this String :  ", count_alpha)
 print("Total Number of Digits in this String : ", count_digit)
 print("Total Number of Lowercase Characters in this String : ",count_lower)
 print("Total Number of Uppercase Characters in this String : ",count_upper)
+"""
 
-
-
+"""
 str1 =input("Enter any word  \n")
 if str1 == str1[::-1]:
     print("Yes",str1,"is a Palindrome String")
@@ -414,3 +415,10 @@ while (inp > 0):
     inp = inp // 10
 
 print("\nSum of the digits of entered number is ->  ", sum)
+
+"""
+
+a = True
+b = False
+print(a or b)
+print(a and b)
