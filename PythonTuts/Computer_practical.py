@@ -1,17 +1,17 @@
 """to find Simple and Compound interest."""
 
-"""
-print("Please enter the follwing inputs, Please enter numbers  only ( PLease Avoid %,$,₹)")
-p = float(input("Enter Principal Amount( Avoid $, ₹)"))
-r = float(input("Enter Rate of Interest (Avoid %)"))
-t = float(input("Enter Time in years"))
 
-simple_interest = (p*r*t)/100
-Amount = p * (pow((1 + r / 100), t))
-CI = Amount - p
-print("Simple Interest = ", simple_interest)
-print("Compund Interest = ", CI)
-"""
+# print("Please enter the follwing inputs, Please enter numbers  only ( PLease Avoid %,$,₹)")
+# p = float(input("Enter Principal Amount( Avoid $, ₹)"))
+# r = float(input("Enter Rate of Interest (Avoid %)"))
+# t = float(input("Enter Time in years"))
+
+# simple_interest = (p*r*t)/100
+# Amount = p *((1 + r / 100)** t)
+# CI = Amount - p
+# print("Simple Interest = ", simple_interest)
+# print("Compund Interest = ", CI)
+
 """Write a Program to find  5 multiples of a given number.(without iteration statement)"""
 
 """
@@ -182,7 +182,7 @@ print("Square roots of the equation are", "\n", r1,"\n", r2)
 
 """
 """ Find the highest number"""
-"""
+
 highest = 0
 
 while True:
@@ -195,8 +195,7 @@ while True:
         break
     else:
         continue
-        
-"""
+
 """Write a program that takes string with multiple words and then capitalize the first letter of each word and forms a new string out of it."""
 """
 str = input("Enter any string with more than one word:\n")
@@ -417,8 +416,27 @@ while (inp > 0):
 print("\nSum of the digits of entered number is ->  ", sum)
 
 """
+#
+# a = True
+# b = False
+# print(a or b)
+# print(a and b)
+# str = "Hard work pays off"
+#
+# print(str[2])
+# print(str[-3])
+# print(str[2:5])
+# print(str[2:5:2])
+#
+# print( (1.1 + 2.2) == 3.3 )
 
-a = True
-b = False
-print(a or b)
-print(a and b)
+# a,b,c,d = 9.2,4,2,12
+# print(c//b)
+# print(a/4)
+# print(b**2)
+# print(d%c)
+# for x in range(1,4):
+#     for y in range(2,5):
+#         if x * y > 10 :
+#             break
+#         print(x*y)
