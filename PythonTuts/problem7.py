@@ -35,7 +35,7 @@ relevance = 0
 
 
 def matchingWords(sentence1, sentence2):
-    words1 = sentence1.strip().split(" ")
+    words1 = sentence1.strip().split(" ")#The Python strip() method removes any spaces or specified characters at the start and end of a string
     words2 = sentence2.strip().split(" ")
     score = 0
     for word1 in words1:
@@ -62,7 +62,12 @@ if __name__ == "__main__":
     # print(scores)
     sortedSentScore = [sentScore for sentScore in sorted(zip(scores, sentences), reverse=True) if sentScore[0] != 0]
     #Agar user ne sirf space hi enter kar diya t score 0 hoga to phir sentScore jo list h uska 0 element bhi 0 hoga
-    # print(sortedSentScore)
+    #print(sortedSentScore) - sortedSentScore ek list h jisme bahut saare tuples h
+
+    """
+    Zip() - eg. li = [2,3,4] li2 = [5,6,7]; 
+    print(tuple(zip(li,l2))) - ((2,4), (3,6) , (4,7))
+    """
     print(f"{len(sortedSentScore) } results found in {time.time() - instant} s")
     for score, item in sortedSentScore:
         print(f"\"{item}\" : with a score of {score}")

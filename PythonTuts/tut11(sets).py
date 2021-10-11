@@ -34,3 +34,4 @@ print(s.isdisjoint(s1))# It means that s1 has completely different values as tha
 
 s.remove(2)
 print(s)
+print(3 + 3.00, 3**3.0 )

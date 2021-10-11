@@ -134,3 +134,53 @@ def triangle(n):
 # Driver Code
 n = 5
 triangle(n)
+
+"""TO Add Matrices"""
+
+# WAP add to matrices.
+r = int(input("Enter how many rows"))
+c = int(input("Enter how many col"))
+
+# to load matrix 1
+main1 = []
+for i in range(0, r):
+    l = []
+    for j in range(0, c):
+        n = int(input("Enter value"))
+        l.append(n)
+    main1.append(l)
+
+# to load matrix 2
+print("enter values for matrix2")
+main2 = []
+for i in range(0, r):
+    l = []
+    for j in range(0, c):
+        n = int(input("Enter value"))
+        l.append(n)
+    main2.append(l)
+
+print("Matrix 1")
+for i in range(0, r):
+    for j in range(0, c):
+        print(main1[i][j], end=" ")
+    print()
+
+print("Matrix2")
+for i in range(0, r):
+    for j in range(0, c):
+        print(main2[i][j], end=" ")
+    print()
+# adding both the matrics
+main3 = []
+for i in range(0, r):
+    l = []
+    for j in range(0, c):
+        l.append(main1[i][j] - main2[i][j])
+    main3.append(l)
+
+print("Matrix3")
+for i in range(0, r):
+    for j in range(0, c):
+        print(main3[i][j], end=" ")
+    print()
