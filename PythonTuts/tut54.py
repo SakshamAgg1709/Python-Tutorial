@@ -24,3 +24,4 @@ class Rectangle(Shape):
 type1 = Shape()#It will pose an error beacuse you can not mae an object in the the abstract base class
 rect1 = Rectangle()
 print(rect1.printarea())
+

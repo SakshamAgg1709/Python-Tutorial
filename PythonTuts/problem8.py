@@ -49,4 +49,4 @@ if __name__ == "__main__":
     number = int(input("Entert any number:\n"))       
     rohanTable = rohanMultiplication(number)
     print(rohanTable)
-    print(f"The above table is wrong at index {isCorrect(rohanTable,number) + 1}\nThe correct answer is {number*(isCorrect(rohanTable,number)+1)} ")
+    print(f"The above table is wrong at index {isCorrect(rohanTable,number)} (Index starting from 0 )\nThe correct answer is {number*(isCorrect(rohanTable,number)+1)} ")
