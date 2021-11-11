@@ -40,21 +40,54 @@ d1 = {} #It is a dictionaryS
 
 """Practise"""
 
-emp = {}
-while True:
-      employee = input("Enter the name of Employee:\n")
-      age = int(input("Enter the age of the Employee:\n"))
-      salary = int(input("Enter the salary of the Employee:\n"))
-      emp[employee] = {}
-      emp[employee]['Age'] = age
-      emp[employee]['Salary'] = salary
-      ask = input("Do you want to add more employees\nType \'y\' for Yes and \'n\' for No:\n")
-      if ask =="y":
-            continue
-      else:
-            break
-for keys in emp:
-      if emp[keys]['Age']>60:
-            emp[keys]['Salary'] = 100000
+# emp = {}
+# while True:
+#       employee = input("Enter the name of Employee:\n")
+#       age = int(input("Enter the age of the Employee:\n"))
+#       salary = int(input("Enter the salary of the Employee:\n"))
+#       emp[employee] = {}
+#       emp[employee]['Age'] = age
+#       emp[employee]['Salary'] = salary
+#       ask = input("Do you want to add more employees\nType \'y\' for Yes and \'n\' for No:\n")
+#       if ask =="y":
+#             continue
+#       else:
+#             break
+#
+# name = input("Enter the name of employee you want to delete")
+# emp.pop(name , "Not Found")
+# print(emp)
+# for keys in emp:
+#       if emp[keys]['Age']>60:
+#             emp[keys]['Salary'] = 100000
+#
+# print("Salary of Employees with age more than 60 is replaced with 100000", emp)
 
-print("Salary of Employees with age more than 60 is replaced with 100000", emp)
+months = {"January" :31, "February" : 28, "March" : 31 , "April" : 30 , "May" : 31 , "June" :30 , "July" : 31, "August" : 31 , "September" : 30 , "October" : 31 , "November" :30 , "December" : 31}
+
+# inp1= input("Enter any month name:\n")
+# inp1.capitalize()
+# try :
+#     print(f"Number of days in {inp1} is {months[inp1]}")
+# except Exception as e:
+#     print("Please enter correct month")
+#
+# li = []
+# for i in months.keys():
+#     li.append(i)
+#     li.sort()
+#
+# for i in li:
+#     print("List of Months in albhatically order:\n",i)
+
+li2= []
+for k,v in months.items():
+    li2.append(v)
+li2.sort()
+
+for i in li2:
+    for k in months.values():
+        if i==k:
+            print(list(months.values()).index(k))
+
+
