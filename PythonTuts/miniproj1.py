@@ -12,7 +12,7 @@ class Library:
             print(items)
 
     def lend_book(self , lender ,book_name):
-        if book_name in self.list_of_book:
+        if book_name.title() in self.list_of_book:
 
             if book_name not in self.lendDict.keys():
                 self.lendDict.update({book_name:lender})
@@ -37,7 +37,7 @@ class Library:
 
 
 if __name__ == '__main__':
-    Saksham_Library = Library(["Rich Dad Poor Dad" , "48-hour startup" , "Ikigai" , "Gita" , "How to win friends and influence people"] , "Saksham Library")
+    Saksham_Library = Library([ "Gita" ] , "Saksham Library")
 
     while(True):
         print(f"Welcome to the {Saksham_Library.library_name}. Enter your choice to continue")
